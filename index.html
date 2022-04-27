@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- METADATA -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LINKS -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Fabricio Castillo - Portfolio</title>
 </head>
+
 <body>
-  <header>
-    <div id="sticky-header-bar">
-    <img src="" alt="" id="logo-argprog">
-    <p>Argentina Programa #Yo Programo</p>
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img class="d-inline mb-1" src="resources/img/APLogo-20-20.png" alt="Logo Argentina Programa">
+        <a class="text-light d-inline ms-2 fs-6-text text-decoration-none " href="">#YoProgramo</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links-navegacion" aria-controls="links-navegacion" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="links-navegacion">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link"href="">Sobre mi</a></li>
+          <li class="nav-item"><a class="nav-link"href="">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link"href="">Educación</a></li>
+          <li class="nav-item"><a class="nav-link"href="">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link"href="">Proyectos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="portada" >
+    <div id="carousel-portada" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="resources/img/banner.jpg" alt="Foto de portada de Fabricio Castillo">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="resources/img/banner2.jpg" alt="Foto de portada de Fabricio Castillo">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="resources/img/banner3.jpg" alt="Foto de portada de Fabricio Castillo">
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-portada" data-bs-slide="prev">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-portada" data-bs-slide="next">
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="perfil" class="container-lg mx-auto">
+      <div class="row">
+        <div class="col-4">
+          <div id="foto-perfil" class="mx-auto rounded-circle">
+            <img class="w-100" src="resources/img/perfil.png" alt="Foto de perfil de Fabricio Castillo">
+          </div>
+          <p class="mx-3 mt-2">Descripcion corta sobre mi, bla bla bla bla bla bla bla blabla bla bla blabla bla bla bla</p>
+        </div>
+        <div class="col-8  my-auto">
+          <h1 class="h1 text-center">Fabricio Castillo</h1>
+          <p class="mx-4" id="descripcion-larga">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, dolorem autem tempora facilis blanditiis quod dolore veniam porro. Quia culpa fugit ut natus praesentium velit amet, molestiae ullam sequi adipisci.
+          </p>
+        </div>
+      </div>
     </div>
     
-    <div id="login">
-      
-    </div>
-  </header>
+    
 
-  <div id="banner">
-    <img src="" alt="Foto de portada de Fabricio Castillo"> <!-- agregar link -->
-  </div>
-
-  <section id="sobre-mi">
-    <div>
-      <div id="foto-perfil">
-        <img src="" alt="Foto de perfil de Fabricio Castillo"><!-- agregar link -->
-      </div>
-      <div id="descripcion-corta">
-        <p>Descripcion corta sobre mi</p>
-      </div>
-    </div>
-
-    <div id="descripcion-larga">
-      <h1 id="nombre-portada">Fabricio Castillo</h1>
-      <p>Hola. Acá va una muy coqueta descripción de quien soy y qué busco. 😉</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex perspiciatis impedit commodi. Quod recusandae ex obcaecati, non soluta, magnam quibusdam sed, tempore rem eius facere incidunt excepturi amet assumenda!</p>
-    </div>
+  </section>
 
   </section>
 
   <section id="experiencia">
     <h2>Experiencias</h2>
     <div class="item-experiencia">
-      <img src="" alt="Foto de empleador"><!-- agregar link -->
+      <img src="resources/img/nowhere.jpg" alt="Foto de empleador">
       <h3>Programador full-stack en Nowhere</h3>
       <p>Descripción de experiencia laboral en Nowhere. Tareas que realicé. Equipo conformado. Herramientas utilizadas. </p>
       <p>Inicio: dd/mm/yyyy</p>
@@ -51,7 +93,7 @@
     </div>
 
     <div class="item-experiencia">
-      <img src="" alt="Foto de empleador"><!-- agregar link -->
+      <img src="resources/img/nowhere.jpg" alt="Foto de empleador">
       <h3>Programador full-stack en Nowhere</h3>
       <p>Descripción de experiencia laboral en Nowhere. Tareas que realicé. Equipo conformado. Herramientas utilizadas. </p>
       <p>Inicio: dd/mm/yyyy</p>
@@ -59,7 +101,7 @@
     </div>
 
     <div class="item-experiencia">
-      <img src="" alt="Foto de empleador"><!-- agregar link -->
+      <img src="resources/img/nowhere.jpg" alt="Foto de empleador">
       <h3>Programador full-stack en Nowhere</h3>
       <p>Descripción de experiencia laboral en Nowhere. Tareas que realicé. Equipo conformado. Herramientas utilizadas. </p>
       <p>Inicio: dd/mm/yyyy</p>
@@ -70,7 +112,7 @@
   
   <section id="educacion">
     <div class="item-educacion">
-      <img src="" alt="Foto de institucion educativa"><!-- agregar link -->
+      <img src="resources/img/nasa_logo.png" alt="Foto de institucion educativa">
       <h3>Analista en sistemas en Nasa</h3>
       <p>Curso intensivo en sistemas embebidos en cohetes orbitales. Contenidos del curso. Herramientas aprendidas. Proyectos. </p>
       <p>Título obtenido: Analista Shunirrrrrr de la Nasa</p>
@@ -78,7 +120,7 @@
     </div>
 
     <div class="item-educacion">
-      <img src="" alt="Foto de institucion educativa"><!-- agregar link -->
+      <img src="resources/img/nasa_logo.png" alt="Foto de institucion educativa">
       <h3>Analista en sistemas en Nasa</h3>
       <p>Curso intensivo en sistemas embebidos en cohetes orbitales. Contenidos del curso. Herramientas aprendidas. Proyectos. </p>
       <p>Título obtenido: Analista Shunirrrrrr de la Nasa</p>
@@ -86,7 +128,7 @@
     </div>
 
     <div class="item-educacion">
-      <img src="" alt="Foto de institucion educativa"><!-- agregar link -->
+      <img src="resources/img/nasa_logo.png" alt="Foto de institucion educativa">
       <h3>Analista en sistemas en Nasa</h3>
       <p>Curso intensivo en sistemas embebidos en cohetes orbitales. Contenidos del curso. Herramientas aprendidas. Proyectos. </p>
       <p>Título obtenido: Analista Shunirrrrrr de la Nasa</p>
@@ -97,70 +139,70 @@
   <section id="skills">
     <div class="item-skills">
       <h3>HTML</h3>
-      <img src="" alt="HTML logo"><!-- agregar link -->
+      <img src="resources/img/html_logo.png" alt="HTML logo">
       <div class="barra-progreso"></div>
     </div>
 
     <div class="item-skills">
       <h3>CSS</h3>
-      <img src="" alt="HTML logo"><!-- agregar link -->
+      <img src="resources/img/css_logo.png" alt="CSS logo">
       <div class="barra-progreso"></div>
     </div>
 
     <div class="item-skills">
       <h3>Javascript</h3>
-      <img src="" alt="HTML logo"><!-- agregar link -->
+      <img src="resources/img/js_logo.png" alt="Javascript logo">
       <div class="barra-progreso"></div>
     </div>
   </section>
 
   <section id="proyectos">
     <div class="item-proyectos">
-      <img src="" alt="Proyecto X logo"><!-- agregar link -->
+      <img src="resources/img/xfiles.jpg" alt="Proyecto X logo">
       <h3>Proyecto X</h3>
       <p>Descripcion 1. En este proyecto trabaje de esto y aquello y logramos hacer un bonito y util proyecto por el cual me gané un asenso.</p>
       <p>Fecha de publicacion</p>
       <p>Tiempo de desarrollo</p>
-      <a href="">Link a github</a>
-      <a href="">Link a página web</a>
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
+      <p><a href="">Link a github</a></p>
+      <p><a href="">Link a página web</a></p>
+      <img src="resources/img/i-want-to-believe.jpg" alt="Imagen ProyectoX">
+      <img src="resources/img/scully_mulder.jpg" alt="Imagen ProyectoX">
     </div>
 
     <div class="item-proyectos">
-      <img src="" alt="Proyecto X logo"><!-- agregar link -->
+      <img src="resources/img/xfiles.jpg" alt="Proyecto X logo">
       <h3>Proyecto X</h3>
       <p>Descripcion 1. En este proyecto trabaje de esto y aquello y logramos hacer un bonito y util proyecto por el cual me gané un asenso.</p>
       <p>Fecha de publicacion</p>
       <p>Tiempo de desarrollo</p>
-      <a href="">Link a github</a>
-      <a href="">Link a página web</a>
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
+      <p><a href="">Link a github</a></p>
+      <p><a href="">Link a página web</a></p>
+      <img src="resources/img/i-want-to-believe.jpg" alt="Imagen ProyectoX">
+      <img src="resources/img/scully_mulder.jpg" alt="Imagen ProyectoX">
     </div>
 
     <div class="item-proyectos">
-      <img src="" alt="Proyecto X logo"><!-- agregar link -->
+      <img src="resources/img/xfiles.jpg" alt="Proyecto X logo">
       <h3>Proyecto X</h3>
       <p>Descripcion 1. En este proyecto trabaje de esto y aquello y logramos hacer un bonito y util proyecto por el cual me gané un asenso.</p>
       <p>Fecha de publicacion</p>
       <p>Tiempo de desarrollo</p>
-      <a href="">Link a github</a>
-      <a href="">Link a página web</a>
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
+      <p><a href="">Link a github</a></p>
+      <p><a href="">Link a página web</a></p>
+      <img src="resources/img/i-want-to-believe.jpg" alt="Imagen ProyectoX">
+      <img src="resources/img/scully_mulder.jpg" alt="Imagen ProyectoX">
     </div>
 
     <div class="item-proyectos">
-      <img src="" alt="Proyecto X logo"><!-- agregar link -->
+      <img src="resources/img/xfiles.jpg" alt="Proyecto X logo">
       <h3>Proyecto X</h3>
       <p>Descripcion 1. En este proyecto trabaje de esto y aquello y logramos hacer un bonito y util proyecto por el cual me gané un asenso.</p>
       <p>Fecha de publicacion</p>
       <p>Tiempo de desarrollo</p>
-      <a href="">Link a github</a>
-      <a href="">Link a página web</a>
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
-      <img src="" alt="Imagen ProyectoX"><!-- agregar link -->
+      <p><a href="">Link a github</a></p>
+      <p><a href="">Link a página web</a></p>
+      <img src="resources/img/i-want-to-believe.jpg" alt="Imagen ProyectoX">
+      <img src="resources/img/scully_mulder.jpg" alt="Imagen ProyectoX">
     </div>
   </section>
 
